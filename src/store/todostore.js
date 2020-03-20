@@ -28,6 +28,14 @@ export const todoStore = {
             const todoIndex = state.todos.indexOf(payload);
             console.log(todoIndex);
             state.todos.splice(todoIndex, 1);
+        },
+        addTodo(state, todo) {
+            state.todos.push({
+                title: todo.title,
+                project: todo.project,
+                done: todo.done
+            });
+            // sweetalert('Success!', 'To-Do created!', 'success');
         }
     },
     actions: {
@@ -39,6 +47,9 @@ export const todoStore = {
         },
         deleteTodo({ commit }, payload) {
             commit('deleteTodo', payload)
+        },
+        addTodo({ commit }, todo) {
+            commit('addTodo', todo)
         }
     },
     getters: {

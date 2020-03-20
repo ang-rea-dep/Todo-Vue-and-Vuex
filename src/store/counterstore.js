@@ -8,11 +8,6 @@ export const counterStore = {
             state.count += payload
         }
     },
-    // actions: {
-    //     incrementAction(context, payload) {
-    //         context.commit('incrementCounter', payload)
-    //     }
-    // },
     actions: {
         incrementAction({ commit }, payload) {
             commit('incrementCounter', payload)

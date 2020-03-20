@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <counter></counter>
+        <counter style="margin-bottom: 50px"></counter>
         <todo-list></todo-list>
     </div>
 </template>

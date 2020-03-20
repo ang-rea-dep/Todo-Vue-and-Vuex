@@ -46,13 +46,12 @@ export default {
         },
         sendForm() {
             if (this.titleText.length > 0 && this.projectText.length > 0) {
-                const title = this.titleText;
-                const project = this.projectText;
-                this.$emit('add-todo', {
-                    title,
-                    project,
-                    done: false,
-                });
+                const addTodo = {
+                    title: this.titleText,
+                    project: this.projectText,
+                    done: false
+                };
+                this.$store.dispatch('todos/addTodo', addTodo);
                 this.newTodoText = '';
             }
         this.isCreating = false;
