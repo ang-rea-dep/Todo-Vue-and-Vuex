@@ -1,4 +1,4 @@
-# vuetest
+# TodoApp using Vue.js and Vuex
 
 > A Vue.js project
 
