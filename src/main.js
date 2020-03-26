@@ -8,8 +8,8 @@ import { store } from './store'
 
 Vue.config.productionTip = false
 Vue.use(Vuex)
-    // console.log(store)
-    /* eslint-disable no-new */
+
+/* eslint-disable no-new */
 new Vue({
     el: '#app',
     router,
