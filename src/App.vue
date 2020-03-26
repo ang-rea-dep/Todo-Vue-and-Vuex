@@ -1,19 +1,16 @@
 <template>
     <div id="app">
-        <counter style="margin-bottom: 50px"></counter>
         <todo-list></todo-list>
     </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList'
-import Counter from './components/Counter'
 
 export default {
     name: 'App',
     components: {
-        TodoList,
-        Counter
+        TodoList
     }
 }
 </script>
