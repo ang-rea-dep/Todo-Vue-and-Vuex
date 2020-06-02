@@ -35,7 +35,6 @@ export const todoStore = {
                 project: todo.project,
                 done: todo.done
             });
-            // sweetalert('Success!', 'To-Do created!', 'success');
         }
     },
     actions: {
